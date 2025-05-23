@@ -1,15 +1,27 @@
 package com.campusdual.classroom;
 
 public class Exercise17 {
-	public static int[] createEmptyIntArray(int positions) {}
+	public static int[] createEmptyIntArray(int positions) {
+		return new int[positions];
+	}
 
-	public static String[] createInitializedStringArray() {}
+	public static String[] createInitializedStringArray() {
+		String[] arregloString = {"1", "2", "3"};
+		return arregloString;
+	}
 
-	public static void populateArray(int[] array, int index, int value) {}
+	public static void populateArray(int[] array, int index, int value) {
+		array[index] = value;
+	}
 
-	public static int arrayLength(int[] array) {}
+	public static int arrayLength(int[] array) {
+		return array.length;
+	}
 
-	public static void showValue(int[] array, int index) {}
+	public static void showValue(int[] array, int index) {
+		if (index >= 0 && index < array.length)
+			System.out.println(array[index]);
+	}
 
 	public static void main(String[] args) {
 		int[] intArray = createEmptyIntArray(3);
